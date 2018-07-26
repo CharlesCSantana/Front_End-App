@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script src="Scripts/angular.js"></script> 
+    <script src="Scripts/less/pesquisa.less"></script>
+    <script src="Scripts/Autocomplete.js"></script>
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places">
+    </script>
+    <title></title>
+</head>
+<body>
+    <div ng-form="" id="locationField">
+        <label>Ida:</label> 
+        <input id="ida-input" onfocus="geolocate()" type="text" placeholder="Cidade"/>
+        <label>Volta:</label>
+        <input id="volta-input" onfocus="geolocate_volta()" type="text" placeholder="Cidade"/>
+        <button>Buscar</button>
+    </div>
+
+    <script>
+           
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAM5IYK6zG-U2jRP_a2KK6wrY7pDPKgBtE&libraries=places&callback=initAutocomplete"
+            async defer></script>
+</body>
+</html>
