@@ -71,9 +71,9 @@
     <Content Include="packages.config" />
     <Content Include="Scripts\angular.min.js.map" />
     <Content Include="Scripts\Autocomplete.js" />
-    <Content Include="Scripts\less\gulpfile.js" />
-    <Content Include="Scripts\less\pesquisa.less" />
-    <Content Include="Scripts\less\task.json" />
+    <Content Include="Scripts\gulpfile.js" />
+    <Content Include="Scripts\pesquisa.less" />
+    <Content Include="task.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
