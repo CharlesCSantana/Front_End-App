@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script src="Scripts/angular.js"></script> 
+    <link rel="stylesheet/less"  href="/Scripts/pesquisa.less" type="text/css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.7.1/less.min.js"></script>
+    <script src="Scripts/Autocomplete.js"></script>
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places">
+    </script>
+    <title></title>
+</head>
+<body>
+    <div class="table_pesquisa" id="locationField">
+        <h1> Passagens Aéreas</h1>
+        <div ng-form="options">
+            <input type="radio"  checked="checked" />
+            <a>Ida e volta</a>
+        </div>
+        
+        <br />
+       <div ng-form="localidades">
+           <label>Ida:</label>
+           <input id="ida-input" onfocus="geolocate()" type="text" placeholder="Origem"  class="input_localidades"/>
+           <label>Volta:</label>
+           <input id="volta-input" onfocus="geolocate_volta()" type="text" placeholder="Destino" class="input_localidades" />
+       </div>
+        <div ng-form="Datas">
+            <p></p>
+            <label>Data Ida:</label>
+            <input id="Data_ida" type="date" class="input_datas" />
+            <label>Data Volta:</label>
+            <input id="Data_volta" type="date" class="input_datas" />
+            <p></p>
+        </div>
+        <button type="submit" class="btn-default btn-submit">
+            <svg height="17" width="16" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 17">
+                <path fill="#ffffff" fill-rule="evenodd" d="M 6.07 2.53 C 4.07 2.53 2.44 4.18 2.44 6.23 C 2.44 8.26 4.07 9.92 6.07 9.92 C 8.06 9.92 9.69 8.26 9.69 6.23 C 9.69 4.18 8.06 2.53 6.07 2.53 L 6.07 2.53 Z M 15.67 15.69 L 14.66 16.73 C 14.38 17.02 13.92 17.02 13.65 16.73 L 8.85 11.83 C 8.11 12.19 6.92 12.39 5.98 12.39 C 2.6 12.39 0 9.59 0 6.15 C 0 2.7 2.6 0 5.98 0 C 9.36 0 12.1 2.7 12.1 6.15 C 12.1 7.58 11.67 9.14 10.93 10.12 L 15.67 14.66 C 15.96 14.95 15.96 15.41 15.67 15.69 L 15.67 15.69 Z M 15.67 15.69"></path>
+            </svg>
+            Pesquisar
+        
+        </button>
+
+    </div>
+
+    <script>
+           
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAM5IYK6zG-U2jRP_a2KK6wrY7pDPKgBtE&libraries=places&callback=initAutocomplete"
+            async defer></script>
+</body>
+</html>
