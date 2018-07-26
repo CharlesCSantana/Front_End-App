@@ -1,14 +1,14 @@
 ﻿
-var  autocomplete_ida, autocomplete_volta;
+var  autocomplete_origem, autocomplete_destino;
 
 function initAutocomplete() {
 
-    autocomplete_ida = new google.maps.places.Autocomplete(
-            /** @type {!HTMLInputElement} */(document.getElementById('ida-input')),
+    autocomplete_origem = new google.maps.places.Autocomplete(
+            /** @type {!HTMLInputElement} */(document.getElementById('origem-input')),
         { types: ['geocode'] });
 
-    autocomplete_volta = new google.maps.places.Autocomplete(
-            /** @type {!HTMLInputElement} */(document.getElementById('volta-input')),
+    autocomplete_destino = new google.maps.places.Autocomplete(
+            /** @type {!HTMLInputElement} */(document.getElementById('destino-input')),
         { types: ['geocode'] });
 }     
 
@@ -23,7 +23,7 @@ function geolocate() {
                 center: geolocation,
                 radius: position.coords.accuracy
             });
-            autocomplete_ida.setBounds(circle.getBounds());
+            autocomplete_origem.setBounds(circle.getBounds());
         });
     }
 }
@@ -38,7 +38,7 @@ function geolocate_volta() {
                 center: geolocation,
                 radius: position.coords.accuracy
             });
-            autocomplete_volta.setBounds(circle.getBounds());
+            autocomplete_destino.setBounds(circle.getBounds());
         });
     }
 }
