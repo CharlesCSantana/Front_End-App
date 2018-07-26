@@ -12,39 +12,56 @@
     <title></title>
 </head>
 <body>
-    <div class="table_pesquisa" id="locationField">
-        <svg height="22" width="22" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22">                    <path fill="#ffffff" fill-rule="evenodd" d="M 21.13 0.09 C 20.43 0.36 19.67 0.67 19.07 1.14 L 14.92 4.65 L 2.21 1.97 L 0.66 3.49 L 10.45 9.09 L 5.53 15.03 L 1.66 13.85 L 0 15.39 L 3.69 17.26 L 3.37 17.67 C 3.18 17.84 3.2 18.41 3.37 18.61 C 3.57 18.78 4.13 18.79 4.31 18.61 L 4.71 18.28 L 6.61 22 L 8.15 20.34 L 6.96 16.46 L 12.92 11.65 L 18.37 21.24 L 19.9 19.68 L 17.27 7.21 L 20.84 2.93 C 21.31 2.34 21.63 1.57 21.9 0.87 C 22.18 0.17 21.83 -0.18 21.13 0.09 L 21.13 0.09 Z M 21.13 0.09"></path> </svg>
-        <span class="span_table"> Passagens Aéreas</span>
+    <div class="painel_pesquisa" style="background-image: url('img/SP.jpg')">
+        <div class="table_pesquisa" id="locationField">            
+            
+            <span class="span_table"> 
+                <svg height="22" width="22" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22"><path fill="#ffffff" fill-rule="evenodd" d="M 21.13 0.09 C 20.43 0.36 19.67 0.67 19.07 1.14 L 14.92 4.65 L 2.21 1.97 L 0.66 3.49 L 10.45 9.09 L 5.53 15.03 L 1.66 13.85 L 0 15.39 L 3.69 17.26 L 3.37 17.67 C 3.18 17.84 3.2 18.41 3.37 18.61 C 3.57 18.78 4.13 18.79 4.31 18.61 L 4.71 18.28 L 6.61 22 L 8.15 20.34 L 6.96 16.46 L 12.92 11.65 L 18.37 21.24 L 19.9 19.68 L 17.27 7.21 L 20.84 2.93 C 21.31 2.34 21.63 1.57 21.9 0.87 C 22.18 0.17 21.83 -0.18 21.13 0.09 L 21.13 0.09 Z M 21.13 0.09"></path> </svg>
+                    Passagens Aéreas
+            </span>
 
-        <div class="opcoes" ng-form="options">
-            <input type="radio"  checked="checked" />
-            <a>Ida e volta</a>
-        </div>
-        
-        <br />
-       <div ng-form="localidades">
-           <label>Origem:</label>
-           <input id="origem-input" onfocus="geolocate()" type="text" placeholder="Origem"  class="input_localidades"/>
-           <label>Destino:</label>
-           <input id="destino-input" onfocus="geolocate_volta()" type="text" placeholder="Destino" class="input_localidades" />
-       </div>
-        <div ng-form="Datas">
+            <img class="tab__selo"  alt="" src="img/economia.png">   
+            <div class="tb_container">
+                Encontre os melhores preços e boa viagem!
+            </div>
+            <div class="opcoes">
+                <input type="radio" checked="checked" />
+                <a>Ida e volta</a>
+            </div>
+
+            <br />
+            <div class="localidade">
+                <div class="origem">
+                    <label>Informe sua origem</label><br />
+                    <input id="origem-input" onfocus="geolocate()" type="text" placeholder="Origem" class="input_localidades"/>
+                </div>
+                <div class="destino">
+                    <label>Informe seu destino</label><br />
+                    <input id="destino-input" onfocus="geolocate_volta()" type="text" placeholder="Destino" class="input_localidades" />
+                </div>
+            </div>
+            <div class="datas">
+                <div class="data_ida">
+                    <label>Data de ida</label><br />
+                    <input id="Data_ida" type="date" class="input_datas" />
+                </div>
+                <div class="data_volta">
+                    <label>Data de volta</label><br />
+                    <input id="Data_volta" type="date" class="input_datas" />
+                </div>
+            </div>  
+            <div class="opcoes">
+                <button type="submit" class="btn-default btn-submit">
+                    <svg height="17" width="16" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 17">
+                        <path fill="#ffffff" fill-rule="evenodd" d="M 6.07 2.53 C 4.07 2.53 2.44 4.18 2.44 6.23 C 2.44 8.26 4.07 9.92 6.07 9.92 C 8.06 9.92 9.69 8.26 9.69 6.23 C 9.69 4.18 8.06 2.53 6.07 2.53 L 6.07 2.53 Z M 15.67 15.69 L 14.66 16.73 C 14.38 17.02 13.92 17.02 13.65 16.73 L 8.85 11.83 C 8.11 12.19 6.92 12.39 5.98 12.39 C 2.6 12.39 0 9.59 0 6.15 C 0 2.7 2.6 0 5.98 0 C 9.36 0 12.1 2.7 12.1 6.15 C 12.1 7.58 11.67 9.14 10.93 10.12 L 15.67 14.66 C 15.96 14.95 15.96 15.41 15.67 15.69 L 15.67 15.69 Z M 15.67 15.69"></path>
+                    </svg>
+                    Pesquisar
+                </button>
+            </div>
             <p></p>
-            <label>Data Ida:</label>
-            <input id="Data_ida" type="date" class="input_datas" />
-            <label>Data Volta:</label>
-            <input id="Data_volta" type="date" class="input_datas" />
-            <p></p>
         </div>
-        <button type="submit" class="btn-default btn-submit">
-            <svg height="17" width="16" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 17">
-                <path fill="#ffffff" fill-rule="evenodd" d="M 6.07 2.53 C 4.07 2.53 2.44 4.18 2.44 6.23 C 2.44 8.26 4.07 9.92 6.07 9.92 C 8.06 9.92 9.69 8.26 9.69 6.23 C 9.69 4.18 8.06 2.53 6.07 2.53 L 6.07 2.53 Z M 15.67 15.69 L 14.66 16.73 C 14.38 17.02 13.92 17.02 13.65 16.73 L 8.85 11.83 C 8.11 12.19 6.92 12.39 5.98 12.39 C 2.6 12.39 0 9.59 0 6.15 C 0 2.7 2.6 0 5.98 0 C 9.36 0 12.1 2.7 12.1 6.15 C 12.1 7.58 11.67 9.14 10.93 10.12 L 15.67 14.66 C 15.96 14.95 15.96 15.41 15.67 15.69 L 15.67 15.69 Z M 15.67 15.69"></path>
-            </svg>
-            Pesquisar
-        
-        </button>
-        <p></p>
     </div>
+    
 
     <script>
            
