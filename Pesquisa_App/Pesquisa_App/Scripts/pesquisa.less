@@ -7,7 +7,7 @@ body {
 }
 .painel_pesquisa {
     width: 98%;
-    height: 450px;
+    height: 600px;
     position: relative;
 }
 
@@ -15,26 +15,49 @@ a{
   color: white;
 }
 
-.opcoes{
-    margin-top: 2px;
-    margin-bottom:initial;
+.opcoes {
+    width: 96%;
+    position: relative;
+    float: left;
+    margin: 10px 30px;
+    display: inline;
 }
 
-label, h1{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size:medium;
-    color: white;
+.tab__selo {
+    top: 15px;
+    right: 40px;
+    position: absolute;
+}
+
+label, h1 {
+    line-height: 25px;
+    font-family: Verdana;
+    font-weight: bold;
+    font-weight: 400;
+    font-size: 15px;
+    color: #fff;
+}
+
+.tb_container {
+    margin: 20px 30px;
+    width: 100%;
+    font-family: ProximaNova-Regular,ProximaNovaA-Regular,ProximaNovaS-Regular;
+    font-weight: 400;
+    font-size: 28px;
+    color: #fff;
 }
 
 
-.input_localidades{
+.input_localidades {
     font-size: larger;
-    width: 40%;
+    width: 98%;
     font-family: inherit;
+    border-radius: 5px;
 }
 
 .span_table {
-    margin-top: 2px;
+    margin-top: 5px;
+    margin-left: 30px;
     font-size:larger;
     color:white;
 }
@@ -45,18 +68,64 @@ label, h1{
     margin-bottom: 2px;
     margin-top: 8px;
     margin: 0 auto;
-    height: 240px;
+    height: 350px;
     border: inherit;
     padding: 5px;
     position: absolute;
     left: 50%;
     position: absolute;
     transform: translateX(-50%);
-    top:25%;
+    top: 25%;
+    border-radius: 10px;
 }
 
-.input_datas{
-    font-size: medium;
+.origem {
+    width: 47%;
+    position: relative;
+    float: left;
+    margin: 1%;
+    display: inline;
+}
+
+.destino {
+    width: 47%;
+    position: relative;
+    float: right;
+    margin: 1%;
+    display: inline;
+}
+
+.data_ida {
+    width: 47%;
+    position: relative;
+    float: left;
+    margin: 2%;
+    display: inline;
+}
+.data_volta {
+    display: inline;
+    float: right;
+    width: 45%;
+    margin: 2%;
+    position: relative;
+}
+.localidade {
+    width: 98%;
+    margin:2%;
+    position:relative;
+}
+.datas {
+    width: 47%;
+    margin: 2%;
+    position: relative;
+}
+
+
+.input_datas {
+    font-size: larger;
+    width: 100%;
+    font-family: inherit;
+    border-radius: 5px;
 }
 
 .btn-submit {
@@ -67,6 +136,9 @@ label, h1{
     height: auto;
     max-height: inherit;
     background-color: #faaf3a;
-    border:inherit;
-    float:right;
+    border: inherit;
+    border-radius: 10px;
+    float: right;
+    color: white;
+    font-weight:bold;
 }
